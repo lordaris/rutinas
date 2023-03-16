@@ -9,11 +9,12 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <h1 className="text-3xl font-bold mb-4">
-        Bienvenido a mi app de entrenamiento
+        Bienvenido a mi app de rutinas.
       </h1>
       <p className="text-lg text-center mb-8">
-        Esta aplicación te ayudará a planificar y realizar tus rutinas de
-        entrenamiento para lograr tus objetivos de fitness. ¡Comienza ahora!
+       Hice esta aplicación para poder enviarte rutinas y que puedas verlas en tu celular.
+       Aún es una versión beta, pero espero que te guste.
+
       </p>
       <Link
         href="/rutinas"
