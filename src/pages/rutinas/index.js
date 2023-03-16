@@ -17,6 +17,7 @@ export default function Routines() {
           </li>
         ))}
       </ul>
+         <Link className={''} href="/">Volver a la página principal</Link>
     </div>
   );
 }

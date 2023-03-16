@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import workouts from "../api/data/ejercicios.json";
-
+import Link from "next/link";
 const WorkoutPage = ({ workout }) => {
   const router = useRouter();
   // This is the fallback case, where the page is being rendered
@@ -46,6 +46,10 @@ const WorkoutPage = ({ workout }) => {
           </div>
         ))}
       </div>
+        <Link href="/rutinas" className={"text-blue-500 hover:underline"}>
+           Atrás
+        </Link>
+
     </div>
   );
 };
