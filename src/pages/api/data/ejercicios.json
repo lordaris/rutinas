@@ -348,5 +348,210 @@
         ]
       }
     ]
+  },
+  {
+    "ID": 3,
+    "Descripcion": "Rutina intermedia",
+    "Dias": [
+      {
+        "Dia": "Lunes y jueves",
+        "Rutina": "Pecho y Hombros",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Press en banco inclinado",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "3-2-1",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Press en banco inclinado",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "3-2-1",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Press declinado en máquina",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "1-1-3",
+            "Notas": ""
+          },
+           {
+            "Ejercicio": "Crossover",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "Puede ser a cualquier altura. Tambien se puede alternar con otro ejercicio ligero de pecho como press en máquina o lagartijas"
+          },
+
+           {
+            "Ejercicio": "Aperturas",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "0-1-3",
+            "Notas": ""
+          },
+
+           {
+            "Ejercicio": "Elevaciones laterales",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "1-2-2",
+            "Notas": "Se pueden añadir isometrías (sostener las mancuernas en la posición mas alta al principio de la serie) para aumentar la intensidad"
+          },
+           {
+            "Ejercicio": "Elevaciones frontales",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "Se pueden añadir isometrías (sostener las mancuernas en la posición mas alta al principio de la serie) para aumentar la intensidad"
+          },
+
+           {
+            "Ejercicio": "Elevaciones posteriores",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "Se puede sustituir por otros ejercicios para posteriores, como jalón al rostro o remo sentado con agarre amplio"
+          }
+
+        ]
+      },
+      {
+        "Dia": "Martes y viernes",
+        "Rutina": "Espalda, biceps y triceps",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Dominadas al fallo en biserie con remo inclinado con barra ",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "Si no se pueden hacer dominadas normales, hacer dominadas asistidas."
+          },
+          {
+            "Ejercicio": "Remo sentado con barra (agarre amplio) en biserie con pull over",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Remo con mancuerna en biserie con curl de biceps",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+           {
+            "Ejercicio": "Curl con barra z en biserie con curl con barra z invertido",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "Los agarres en la barra z deben ser naturales, no complicados. No sustituir con barra recta"
+          },
+
+           {
+            "Ejercicio": "Curl predicador en biserie con extensión de triceps",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "La extensión puede ser con cualquier accesorio"
+          },
+
+           {
+            "Ejercicio": "Patada de mula en biserie con fondos en banco",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+           {
+            "Ejercicio": "Press california en biserie con fondos en banco",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          }
+
+
+        ]
+      },
+      {
+        "Dia": "Miercoles y sabado",
+        "Rutina": "Pierna y abdominales",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Sentadilla libre con barra",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "3-2-1",
+            "Notas": "Añadir sentadilla sin peso al fallo al final de la serie para aumentar la intensidad"
+          },
+          {
+            "Ejercicio": "Extensiones de cuadriceps",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "0-2-3",
+            "Notas": "Agregar isometrías al principio de la serie para aumentar la intensidad"
+          },
+          {
+            "Ejercicio": "Desplantes estáticos con mancuerna",
+            "Series": 4,
+            "Repeticiones": 20,
+            "Cadencia": "",
+            "Notas": "Añadir desplantes sin peso al fallo al final de la serie para aumentar la intensidad"
+          },
+           {
+            "Ejercicio": "Curl femoral sentado",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "0-2-3",
+            "Notas": "Añadir peso muerto rumano al fallo al final de la serie para aumentar la intensidad"
+          },
+
+           {
+            "Ejercicio": "Elevación de pelvis (hip thrust)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "0-2-3",
+            "Notas": "Alternar con máquina de abductores"
+          },
+
+           {
+            "Ejercicio": "Pantorrilla (cualquier máquina)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+           {
+            "Ejercicio": "Crunches",
+            "Series": 4,
+            "Repeticiones": 20,
+            "Cadencia": "",
+            "Notas": "No agarrar la cabeza ni subir por completo hasta las rodillas"
+          },
+
+           {
+            "Ejercicio": "Crunches laterales (para oblicuos)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "No agarrar la cabeza ni subir por completo hasta las rodillas"
+          },
+            {
+            "Ejercicio": "Elevación de piernas en banco inclinado",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          }
+
+
+        ]
+      }
+    ]
   }
 ]

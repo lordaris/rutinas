@@ -7,6 +7,7 @@ const WorkoutPage = ({ workout }) => {
   if (router.isFallback) {
     return <div>Loading...</div>;
   }
+
   const { Dias } = workout;
   return (
     <div className={"container mx-auto my-10"}>
@@ -18,11 +19,14 @@ const WorkoutPage = ({ workout }) => {
           <div key={Dia} className={"bg-white rounded-lg shadow p-6"}>
             <h2 className={"text-xl font-bold mb-2"}>Día {Dia}</h2>
             <h3 className={"text-lg font-medium mb-1"}>Rutina: {Rutina}</h3>
+
+
             <ul>
               {Ejercicios.map(
                 ({ Ejercicio, Series, Repeticiones, Cadencia, Notas }) => (
                   <li key={Ejercicio} className={"mb-4"}>
                     <h4 className={""}>Ejercicio: {Ejercicio}</h4>
+
                     <p className={"text-gray-700 mb-1"}>Series: {Series}</p>
                     <p className="text-gray-700 mb-1">
                       Repeticiones: {Repeticiones}
