@@ -1,0 +1,352 @@
+[
+  {
+    "ID": 1,
+    "Descripcion": "Rutina avanzada Arnold, nivel 1",
+    "Dias": [
+      {
+        "Dia": "Lunes, miercoles y viernes",
+        "Rutina": "Full Body",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Press de banco plano",
+            "Series": 5,
+            "Repeticiones": "10-8-6-4-4. En las últimas dos series, hacer descendentes a 3 pesos",
+            "Cadencia": "1-1-1",
+            "Notas": "Sustituir barras por mancuernas cada 3 días"
+          },
+          {
+            "Ejercicio": "Press de banco inclinado",
+            "Series": 5,
+            "Repeticiones": "Igual que el anterior",
+            "Cadencia": "1-1-1",
+            "Notas": "Igual que el anterior"
+          },
+          {
+            "Ejercicio": "Aperturas",
+            "Series": 5,
+            "Repeticiones": "10-8-8-8-6",
+            "Cadencia": "3-1-1",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Fondos",
+            "Series": 5,
+            "Repeticiones": "15-10-8-8-8",
+            "Cadencia": "3-1-1",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Pull Over",
+            "Series": 3,
+            "Repeticiones": "15",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Dominadas",
+            "Series": 5,
+            "Repeticiones": "10",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Dominadas con agarre cerrado",
+            "Series": 5,
+            "Repeticiones": "10",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Remo con barra T",
+            "Series": 5,
+            "Repeticiones": "15-12-10-8-6",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Remo con mancuerna",
+            "Series": 5,
+            "Repeticiones": "8 a 12",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Sentadillas (calentamiento)",
+            "Series": 5,
+            "Repeticiones": "20",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Sentadillas",
+            "Series": 5,
+            "Repeticiones": "10-8-6-4-4",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Sentadilla frontal",
+            "Series": 4,
+            "Repeticiones": "10-8-6-6",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Sentadilla hack",
+            "Series": 4,
+            "Repeticiones": "10",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Femoral tumbado",
+            "Series": 5,
+            "Repeticiones": "20-10-8-6-6",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Femoral de pie",
+            "Series": 5,
+            "Repeticiones": "10",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Peso muerto rumano",
+            "Series": 3,
+            "Repeticiones": "10",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Pantorrilla",
+            "Series": 5,
+            "Repeticiones": "10",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Elevación de rodillas en silla romana",
+            "Series": 1,
+            "Repeticiones": "100",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Crunches",
+            "Series": "",
+            "Repeticiones": "50",
+            "Cadencia": "",
+            "Notas": ""
+          }
+        ]
+      },
+      {
+        "Dia": "Martes, jueves y sabado",
+        "Rutina": "Full body",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Press militar (calentamiento)",
+            "Series": 5,
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Press militar",
+            "Series": 4,
+            "Repeticiones":  "10-8-8-6",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Elevaciones laterales",
+            "Series": 5,
+            "Repeticiones": 8,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Elevaciones frontales",
+            "Series": 5,
+            "Repeticiones": 8,
+            "Cadencia": "",
+            "Notas": ""
+          },
+            {
+            "Ejercicio": "Encogimiento de hombros",
+            "Series": 3,
+            "Repeticiones": 10,
+            "Cadencia": "",
+            "Notas": ""
+          },
+             {
+            "Ejercicio": "Curl con barra",
+            "Series": 5,
+            "Repeticiones": "15-10-8-4",
+            "Cadencia": "",
+            "Notas": ""
+          },
+
+             {
+            "Ejercicio": "Curl inclinado con mancuernas",
+            "Series": 5,
+            "Repeticiones": "8",
+            "Cadencia": "",
+            "Notas": ""
+          },
+
+             {
+            "Ejercicio": "Curl concentrado",
+            "Series": 3,
+            "Repeticiones": "8",
+            "Cadencia": "",
+            "Notas": "El curl concentrado puede ser lesivo para la columna. Puede sustituirse por curl con mancuernas en predicador"
+          },
+
+             {
+            "Ejercicio": "Press frances acostado",
+            "Series": 5,
+            "Repeticiones": "15-10-8-6-4",
+            "Cadencia": "",
+            "Notas": ""
+          },
+
+             {
+            "Ejercicio": "Extensión de triceps (push down)",
+            "Series": 5,
+            "Repeticiones": "8",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Extensión de triceps a un brazo (con polea)",
+            "Series": 5,
+            "Repeticiones": "10",
+            "Cadencia": "",
+            "Notas": ""
+          },
+           {
+            "Ejercicio": "Curl de antebrazo con barra",
+            "Series": 5,
+            "Repeticiones": "10",
+            "Cadencia": "",
+            "Notas": ""
+          },
+            {
+            "Ejercicio": "Curl de antebrazo invertido",
+            "Series": 3,
+            "Repeticiones": "10",
+            "Cadencia": "",
+            "Notas": ""
+          },
+            {
+            "Ejercicio": "Costurera",
+            "Series": 5,
+            "Repeticiones": "10",
+            "Cadencia": "",
+            "Notas": ""
+          },
+              {
+            "Ejercicio": "Sentadillas",
+            "Series": "",
+            "Repeticiones": "100",
+            "Cadencia": "",
+            "Notas": ""
+          },
+               {
+            "Ejercicio": "Elevación de piernas en banco inclinado (abdomen)",
+            "Series": "",
+            "Repeticiones": "100",
+            "Cadencia": "",
+            "Notas": ""
+          }
+
+
+        ]
+      }
+
+
+    ]
+  },
+  {
+    "ID": 2,
+    "Descripcion": "Rutina de acondicionamiento",
+    "Dias": [
+      {
+        "Dia": "Lunes a viernes",
+        "Rutina": "Acondicionamiento - Full body",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Extensión de cuadriceps",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "0-2-3",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Curl femoral sentado",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "0-2-3",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Prensa",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "3-2-0",
+            "Notas": "Cambiar por sentadilla si se puede"
+          },
+           {
+            "Ejercicio": "Pantorrilla ",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "Cualquier ejercicio de pantorrilla"
+          },
+
+           {
+            "Ejercicio": "Jalón frontal (al pecho)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "0-2-2",
+            "Notas": "No confundir con remo sentado"
+          },
+
+           {
+            "Ejercicio": "Press de banco plano",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "3-2-1",
+            "Notas": "Se puede cambiar por todas las variantes de press de pecho (declinado, inclinado, con barra, mancuerna, etc)"
+          },
+           {
+            "Ejercicio": "Press militar",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "Tambien pueden ser elevaciones laterales"
+          },
+
+           {
+            "Ejercicio": "Curl con mancuerna (biceps)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "Cualquier ejercicio de biceps está bien si se prefiere otro"
+          },
+
+           {
+            "Ejercicio": "Extensión de triceps",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "Cualquier ejercicio de triceps está bien si se prefiere"
+          }
+        ]
+      }
+    ]
+  }
+]
