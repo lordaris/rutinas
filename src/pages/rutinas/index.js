@@ -22,8 +22,7 @@ export default function Routines() {
             <li key={ID}>
               <Link href={`/rutinas/${ID}`}>
                 <div className="block border border-gray-400 rounded p-4 hover:bg-gray-200">
-                  <h2 className="text-lg font-bold mb-2">Rutina {ID}</h2>
-                  <p className="text-gray-700">{Descripcion}</p>
+                  <h2 className="text-lg font-bold mb-2">{Descripcion}</h2>
                 </div>
               </Link>
             </li>

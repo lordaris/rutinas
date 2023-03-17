@@ -1,7 +1,7 @@
 [
   {
     "ID": 1,
-    "Descripcion": "Rutina avanzada Arnold, nivel 1",
+    "Descripcion": "Avanzada Arnold, nivel 1",
     "Dias": [
       {
         "Dia": "Lunes, miercoles y viernes",
@@ -268,7 +268,7 @@
   },
   {
     "ID": 2,
-    "Descripcion": "Rutina de acondicionamiento",
+    "Descripcion": "Acondicionamiento",
     "Dias": [
       {
         "Dia": "Lunes a viernes",
@@ -347,7 +347,7 @@
   },
   {
     "ID": 3,
-    "Descripcion": "Rutina intermedia",
+    "Descripcion": "Intermedia 1",
     "Dias": [
       {
         "Dia": "Lunes y jueves",
@@ -736,6 +736,191 @@
             "Repeticiones": 15,
             "Cadencia": "",
             "Notas": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 5,
+    "Descripcion": "Avanzada 1",
+    "Dias": [
+      {
+        "Dia": "Lunes y Jueves",
+        "Rutina": "Pecho y hombro",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Press en banco inclinado con barra (calentamiento) ",
+            "Series": 1,
+            "Repeticiones": 20,
+            "Cadencia": "3-2-1",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Press en banco inclinado con barra o mancuerna (ascendente)",
+            "Series": 4,
+            "Repeticiones": "12-10-8-6",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Press en banco inclinado con barra o mancuerna (descendente a 3 pesos)",
+            "Series": 2,
+            "Repeticiones": "Casi al fallo",
+            "Cadencia": "",
+            "Notas": "Utilizar el peso máximo de la serie anterior y bajar el peso tras casi llegar al fallo"
+          },
+          {
+            "Ejercicio": "Press en banco plano con barra o mancuerna + pull over acostado con mancuerna (biserie)",
+            "Series": 4,
+            "Repeticiones": "12",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Aperturas en banco inclinado + press svend hacia adelante en banco inclinado(biserie)",
+            "Series": 4,
+            "Repeticiones": "12",
+            "Cadencia": "",
+            "Notas": "El press svend se debe hacer hacia adelante y no hacia arriba para trabajar la parte baja del pectoral"
+          },
+          {
+            "Ejercicio": "Press militar (calentamiento)",
+            "Series": 1,
+            "Repeticiones": "20",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Press militar + elevaciones laterales con mancuernas (biserie)",
+            "Series": 4,
+            "Repeticiones": "12",
+            "Cadencia": "",
+            "Notas": "Realizar el movimiento del press militar desde abajo de la barbilla hasta arriba de la cabeza"
+          },
+          {
+            "Ejercicio": "Press para hombro en supinación con mancuernas + elevaciones frontales con mancuernas (biserie)",
+            "Series": 4,
+            "Repeticiones": "12",
+            "Cadencia": "",
+            "Notas": "Realizar el movimiento del press desde abajo de la barbilla hasta arriba de la cabeza"
+          },
+          {
+            "Ejercicio": "Elevaciones posteriores + patada trasera para posteriores (rear delt kickback) (biserie)",
+            "Series": 4,
+            "Repeticiones": "12",
+            "Cadencia": "",
+            "Notas": ""
+          }
+        ]
+      },
+      {
+        "Dia": "Martes y Viernes",
+        "Rutina": "Espalda, biceps y triceps",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Dominadas al fallo + remo con barra con agarre en supinación (biserie)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Peso muerto con barra + remo con barra con agarre en pronación (biserie)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Remo con mancuerna + encogimientos con mancuerna (biserie)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Jalón frontal con agarre en supinación + curl con mancuerna (biserie)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Curl predicador con barra + curl con agarre neutro (martillos) con mancuerna (biserie)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Press california + fondos en banco (biserie)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Press francés + extensión de triceps con polea (biserie)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Elevación de piernas en silla romana ",
+            "Series": "1",
+            "Repeticiones": 50,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Abdominales con polea alta + side bends con mancuerna (biserie)",
+            "Series": "3",
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": "Usar un peso alto en side bends, con solo una mancuerna"
+          }
+        ]
+      },
+      {
+        "Dia": "Miercoles",
+        "Rutina": "Pierna",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Sentadilla libre con barra + sentadillas cortas (poca subida) sin peso al fallo (biserie)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "12 repeticiones en la sentadilla libre e inmediatamente despues llegar al fallo con sentadillas sin peso"
+          },
+          {
+            "Ejercicio": "Prensa descendente a 3 pesos",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Desplante Bulgaro con mancuernas",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "Sustituir por elevación de pelvis (hip thrust) si se prefiere"
+          },
+          {
+            "Ejercicio": "Peso muerto rumano con barra + curl femoral tumbado (biserie)",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Pantorrilla en prensa a 3 posiciones",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "Usar cualquier otra máquina de pantorrilla si se prefiere"
           }
         ]
       }
