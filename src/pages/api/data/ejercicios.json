@@ -156,7 +156,7 @@
           {
             "Ejercicio": "Press militar",
             "Series": 4,
-            "Repeticiones":  "10-8-8-6",
+            "Repeticiones": "10-8-8-6",
             "Cadencia": "",
             "Notas": ""
           },
@@ -174,14 +174,14 @@
             "Cadencia": "",
             "Notas": ""
           },
-            {
+          {
             "Ejercicio": "Encogimiento de hombros",
             "Series": 3,
             "Repeticiones": 10,
             "Cadencia": "",
             "Notas": ""
           },
-             {
+          {
             "Ejercicio": "Curl con barra",
             "Series": 5,
             "Repeticiones": "15-10-8-4",
@@ -189,7 +189,7 @@
             "Notas": ""
           },
 
-             {
+          {
             "Ejercicio": "Curl inclinado con mancuernas",
             "Series": 5,
             "Repeticiones": "8",
@@ -197,7 +197,7 @@
             "Notas": ""
           },
 
-             {
+          {
             "Ejercicio": "Curl concentrado",
             "Series": 3,
             "Repeticiones": "8",
@@ -205,7 +205,7 @@
             "Notas": "El curl concentrado puede ser lesivo para la columna. Puede sustituirse por curl con mancuernas en predicador"
           },
 
-             {
+          {
             "Ejercicio": "Press frances acostado",
             "Series": 5,
             "Repeticiones": "15-10-8-6-4",
@@ -213,7 +213,7 @@
             "Notas": ""
           },
 
-             {
+          {
             "Ejercicio": "Extensión de triceps (push down)",
             "Series": 5,
             "Repeticiones": "8",
@@ -227,47 +227,43 @@
             "Cadencia": "",
             "Notas": ""
           },
-           {
+          {
             "Ejercicio": "Curl de antebrazo con barra",
             "Series": 5,
             "Repeticiones": "10",
             "Cadencia": "",
             "Notas": ""
           },
-            {
+          {
             "Ejercicio": "Curl de antebrazo invertido",
             "Series": 3,
             "Repeticiones": "10",
             "Cadencia": "",
             "Notas": ""
           },
-            {
+          {
             "Ejercicio": "Costurera",
             "Series": 5,
             "Repeticiones": "10",
             "Cadencia": "",
             "Notas": ""
           },
-              {
+          {
             "Ejercicio": "Sentadillas",
             "Series": "",
             "Repeticiones": "100",
             "Cadencia": "",
             "Notas": ""
           },
-               {
+          {
             "Ejercicio": "Elevación de piernas en banco inclinado (abdomen)",
             "Series": "",
             "Repeticiones": "100",
             "Cadencia": "",
             "Notas": ""
           }
-
-
         ]
       }
-
-
     ]
   },
   {
@@ -299,7 +295,7 @@
             "Cadencia": "3-2-0",
             "Notas": "Cambiar por sentadilla si se puede"
           },
-           {
+          {
             "Ejercicio": "Pantorrilla ",
             "Series": 4,
             "Repeticiones": 12,
@@ -307,7 +303,7 @@
             "Notas": "Cualquier ejercicio de pantorrilla"
           },
 
-           {
+          {
             "Ejercicio": "Jalón frontal (al pecho)",
             "Series": 4,
             "Repeticiones": 12,
@@ -315,14 +311,14 @@
             "Notas": "No confundir con remo sentado"
           },
 
-           {
+          {
             "Ejercicio": "Press de banco plano",
             "Series": 4,
             "Repeticiones": 12,
             "Cadencia": "3-2-1",
             "Notas": "Se puede cambiar por todas las variantes de press de pecho (declinado, inclinado, con barra, mancuerna, etc)"
           },
-           {
+          {
             "Ejercicio": "Press militar",
             "Series": 4,
             "Repeticiones": 12,
@@ -330,7 +326,7 @@
             "Notas": "Tambien pueden ser elevaciones laterales"
           },
 
-           {
+          {
             "Ejercicio": "Curl con mancuerna (biceps)",
             "Series": 4,
             "Repeticiones": 12,
@@ -338,7 +334,7 @@
             "Notas": "Cualquier ejercicio de biceps está bien si se prefiere otro"
           },
 
-           {
+          {
             "Ejercicio": "Extensión de triceps",
             "Series": 4,
             "Repeticiones": 12,
@@ -378,7 +374,7 @@
             "Cadencia": "1-1-3",
             "Notas": ""
           },
-           {
+          {
             "Ejercicio": "Crossover",
             "Series": 4,
             "Repeticiones": 12,
@@ -386,7 +382,7 @@
             "Notas": "Puede ser a cualquier altura. Tambien se puede alternar con otro ejercicio ligero de pecho como press en máquina o lagartijas"
           },
 
-           {
+          {
             "Ejercicio": "Aperturas",
             "Series": 4,
             "Repeticiones": 12,
@@ -394,14 +390,14 @@
             "Notas": ""
           },
 
-           {
+          {
             "Ejercicio": "Elevaciones laterales",
             "Series": 4,
             "Repeticiones": 12,
             "Cadencia": "1-2-2",
             "Notas": "Se pueden añadir isometrías (sostener las mancuernas en la posición mas alta al principio de la serie) para aumentar la intensidad"
           },
-           {
+          {
             "Ejercicio": "Elevaciones frontales",
             "Series": 4,
             "Repeticiones": 12,
@@ -409,14 +405,13 @@
             "Notas": "Se pueden añadir isometrías (sostener las mancuernas en la posición mas alta al principio de la serie) para aumentar la intensidad"
           },
 
-           {
+          {
             "Ejercicio": "Elevaciones posteriores",
             "Series": 4,
             "Repeticiones": 12,
             "Cadencia": "",
             "Notas": "Se puede sustituir por otros ejercicios para posteriores, como jalón al rostro o remo sentado con agarre amplio"
           }
-
         ]
       },
       {
@@ -444,7 +439,7 @@
             "Cadencia": "",
             "Notas": ""
           },
-           {
+          {
             "Ejercicio": "Curl con barra z en biserie con curl con barra z invertido",
             "Series": 4,
             "Repeticiones": 12,
@@ -452,7 +447,7 @@
             "Notas": "Los agarres en la barra z deben ser naturales, no complicados. No sustituir con barra recta"
           },
 
-           {
+          {
             "Ejercicio": "Curl predicador en biserie con extensión de triceps",
             "Series": 4,
             "Repeticiones": 12,
@@ -460,22 +455,20 @@
             "Notas": "La extensión puede ser con cualquier accesorio"
           },
 
-           {
+          {
             "Ejercicio": "Patada de mula en biserie con fondos en banco",
             "Series": 4,
             "Repeticiones": 12,
             "Cadencia": "",
             "Notas": ""
           },
-           {
+          {
             "Ejercicio": "Press california en biserie con fondos en banco",
             "Series": 4,
             "Repeticiones": 12,
             "Cadencia": "",
             "Notas": ""
           }
-
-
         ]
       },
       {
@@ -503,7 +496,7 @@
             "Cadencia": "",
             "Notas": "Añadir desplantes sin peso al fallo al final de la serie para aumentar la intensidad"
           },
-           {
+          {
             "Ejercicio": "Curl femoral sentado",
             "Series": 4,
             "Repeticiones": 12,
@@ -511,7 +504,7 @@
             "Notas": "Añadir peso muerto rumano al fallo al final de la serie para aumentar la intensidad"
           },
 
-           {
+          {
             "Ejercicio": "Elevación de pelvis (hip thrust)",
             "Series": 4,
             "Repeticiones": 12,
@@ -519,14 +512,14 @@
             "Notas": "Alternar con máquina de abductores"
           },
 
-           {
+          {
             "Ejercicio": "Pantorrilla (cualquier máquina)",
             "Series": 4,
             "Repeticiones": 12,
             "Cadencia": "",
             "Notas": ""
           },
-           {
+          {
             "Ejercicio": "Crunches",
             "Series": 4,
             "Repeticiones": 20,
@@ -534,22 +527,216 @@
             "Notas": "No agarrar la cabeza ni subir por completo hasta las rodillas"
           },
 
-           {
+          {
             "Ejercicio": "Crunches laterales (para oblicuos)",
             "Series": 4,
             "Repeticiones": 12,
             "Cadencia": "",
             "Notas": "No agarrar la cabeza ni subir por completo hasta las rodillas"
           },
-            {
+          {
             "Ejercicio": "Elevación de piernas en banco inclinado",
             "Series": 4,
             "Repeticiones": 12,
             "Cadencia": "",
             "Notas": ""
           }
-
-
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 4,
+    "Descripcion": "Énfasis en pierna (avanzado)",
+    "Dias": [
+      {
+        "Dia": "Lunes",
+        "Rutina": "Pierna",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Sentadilla libre (con barra) + sentadilla corta al fallo sin barra + Extensiones de cuadriceps (Triserie) ",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Desplantes + curl femoral sentado + peso muerto rumano (Triserie) ",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "Los desplantes pueden ser de cualquier tipo (con mancuernas, con barra, en Smith, estáticos, caminando, etc.)"
+          },
+          {
+            "Ejercicio": "Sentadilla sumo + elevación de pelvis (hip thrust) + pantorrilla (Triserie) ",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "3-2-1, 0-2-3",
+            "Notas": "Las cadencias son para la sentadilla sumo y elevación de pelvis respectivamente"
+          }
+        ]
+      },
+      {
+        "Dia": "Martes",
+        "Rutina": "Espalda, biceps y triceps",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Dominadas asistidas + Remo con mancuernas (biserie)",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Remo con barra + hiperextensiones (biserie)",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Curl de biceps con barra Z + martillos con mancuerna (biserie)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Curl con mancuerna en predicador + extensión de triceps con mancuerna (biserie)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Press francés + fondos en banco",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          }
+        ]
+      },
+      {
+        "Dia": "Miercoles",
+        "Rutina": "Pierna y abdomen",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Prensa (altura media, pies al ancho de los hombros) + extensión de cuadriceps + curl femoral (sentado o acostado) (Triserie) ",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Desplante bulgaro + peso muerto rumano a una pierna + pantorrilla (cualquier máquina) (Triserie) ",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "crunches + crunches laterales (para oblicuos) + elevación de piernas en banco inclinado (Triserie) ",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          }
+        ]
+      },
+      {
+        "Dia": "Jueves",
+        "Rutina": "Pecho y hombro",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Press en banco inclinado con mancuernas + aperturas en banco inclinado con mancuernas + press svend (triserie)",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Press en banco plano con mancuernas + aperturas en máquina (biserie)",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Elevaciones laterales + elevaciones frontales + elevaciones posteriores (triserie)",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          }
+        ]
+      },
+      {
+        "Dia": "Viernes",
+        "Rutina": "Gluteo",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Peso muerto rumano con mancuernas ",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Prensa con pies juntos en posición alta + desplantes caminando (biserie)",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Patada con cable hacia atrás + patada lateral con cable (biserie)",
+            "Series": 3,
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Abductores en máquina + sentadilla con banda elástica (biserie)",
+            "Series": 3,
+            "Repeticiones": 15,
+            "Cadencia": "1-2-3",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Elevación de pelvis (hip thrust) + puentes con banda elástica (biserie)",
+            "Series": 3,
+            "Repeticiones": 20,
+            "Cadencia": "",
+            "Notas": "La banda va ligeramente arriba de la altura de las rodillas. Los pies se colocan casi juntos y las rodillas muy separadas haciendo tensión con la banda. Se eleva la cadera sin juntar las rodillas"
+          }
+        ]
+      },
+      {
+        "Dia": "Sabado ",
+        "Rutina": "Gluteo (alternativa)",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Sentadilla con banda elastica + Elevación de pelvis (hip thrust) (biserie)",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Puentes con banda elastica + puentes a 1 pierna (biserie)",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Prensa con pies muy separados en posición alta + desplantes en Smith con step (biserie)",
+            "Series": 3,
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": ""
+          }
         ]
       }
     ]
