@@ -4,8 +4,12 @@ import { IoCaretBackOutline } from "react-icons/io5";
 import { AiFillHome } from "react-icons/ai";
 import workouts from "../api/data/ejercicios.json";
 import Link from "next/link";
+
 const WorkoutPage = ({ workout }) => {
+  const [selectedDay, setSelectedDay] = useState(null);
+
   const router = useRouter();
+
   // This is the fallback case, where the page is being rendered
   if (router.isFallback) {
     return <div>Loading...</div>;
@@ -13,7 +17,6 @@ const WorkoutPage = ({ workout }) => {
 
   const { Dias } = workout;
 
-  const [selectedDay, setSelectedDay] = useState(null);
   const toggleDetails = (dia) => {
     if (selectedDay === dia) {
       setSelectedDay(null);
