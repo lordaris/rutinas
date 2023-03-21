@@ -4,7 +4,7 @@
     "Descripcion": "Avanzada Arnold, nivel 1",
     "Dias": [
       {
-        "Dia": "Lunes, miercoles y viernes",
+        "Dia": "Lunes, miércoles y viernes",
         "Rutina": "Full Body",
         "Ejercicios": [
           {
@@ -143,7 +143,7 @@
         ]
       },
       {
-        "Dia": "Martes, jueves y sabado",
+        "Dia": "Martes, jueves y sábado",
         "Rutina": "Full body",
         "Ejercicios": [
           {
@@ -921,6 +921,351 @@
             "Repeticiones": 12,
             "Cadencia": "",
             "Notas": "Usar cualquier otra máquina de pantorrilla si se prefiere"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 6,
+    "Descripcion": "Push Pull Legs",
+    "Dias": [
+      {
+        "Dia": "Lunes",
+        "Rutina": "Pecho y hombro y triceps",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Press en banco plano",
+            "Series": 5,
+            "Repeticiones": 15,
+            "Cadencia": "3-2-1",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Press en banco al fallo",
+            "Series": 1,
+            "Repeticiones": "Fallo",
+            "Cadencia": "1-1-1",
+            "Notas": "Usar poco menos peso que el ejercicio anterior"
+          },
+          {
+            "Ejercicio": "Press en banco inclinado con mancuernas + Lagartijas (biserie)",
+            "Series": 5,
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Cross over con polea alta (para parte baja del pecho)",
+            "Series": 5,
+            "Repeticiones": "15",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Fondos en paralelas",
+            "Series": 3,
+            "Repeticiones": "Al fallo",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Press militar (calentamiento)",
+            "Series": 1,
+            "Repeticiones": "20",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Press militar + press con agarre supinado para hombro (biserie)",
+            "Series": 5,
+            "Repeticiones": "12",
+            "Cadencia": "",
+            "Notas": "Realizar el movimiento del ambos ejercicios desde abajo de la barbilla hasta arriba de la cabeza"
+          },
+          {
+            "Ejercicio": "Press Arnold",
+            "Series": 3,
+            "Repeticiones": "12",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Elevaciones laterales con mancuernas",
+            "Series": 4,
+            "Repeticiones": "12",
+            "Cadencia": "",
+            "Notas": "En cada inicio de serie hacer 5 isometrías de 5 segundos antes de las 12 repeticiones"
+          }
+        ]
+      },
+      {
+        "Dia": "Martes",
+        "Rutina": "Espalda, biceps y trapecio",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Peso muerto convencional",
+            "Series": 5,
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Dominadas (pueden ser con lastre)",
+            "Series": 4,
+            "Repeticiones": "al fallo",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Remo inclinado con barra T",
+            "Series": 3,
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Remo isolateral",
+            "Series": 4,
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Curl predicador + martillos (biserie)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Curl con barra Z + curl en máquina (sillita) (biserie)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Cables cruzados (para posteriores)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Encogimientos de hombros con mancuernas",
+            "Series": "4",
+            "Repeticiones": 20,
+            "Cadencia": "",
+            "Notas": ""
+          }
+        ]
+      },
+      {
+        "Dia": "Miercoles",
+        "Rutina": "Pierna",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Sentadilla libre con barra + sentadillas cortas (poca subida) sin peso al fallo (biserie)",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "12 repeticiones en la sentadilla libre e inmediatamente despues llegar al fallo con sentadillas sin peso"
+          },
+          {
+            "Ejercicio": "Good mornings con barra",
+            "Series": 3,
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Prensa con pies abajo y juntos",
+            "Series": 8,
+            "Repeticiones": 12,
+            "Cadencia": "3-2-1",
+            "Notas": "Hacer dos series con poco peso y subir el peso en cada nueva serie. Si no se puede subir mas el peso, seguir haciendo series con el último peso hasta completar las 8 series"
+          },
+          {
+            "Ejercicio": "Extensión de cuadriceps",
+            "Series": 8,
+            "Repeticiones": 20,
+            "Cadencia": "1-2-3",
+            "Notas": "Usar un peso ligero y descansar muy poco entre series"
+          },
+          {
+            "Ejercicio": "Pantorrilla en prensa a 3 posiciones",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "Usar cualquier otra máquina de pantorrilla si se prefiere"
+          }
+        ]
+      },
+      {
+        "Dia": "Jueves",
+        "Rutina": "Pecho, hombro y triceps",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Press en banco inclinado con barra + lagartijas (biserie)",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "20 lagartijas"
+          },
+          {
+            "Ejercicio": "Press en banco plano con barra + lagartijas (biserie)",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "20 lagartijas"
+          },
+          {
+            "Ejercicio": "Aperturas para pecho en máquina",
+            "Series": 4,
+            "Repeticiones": 20,
+            "Cadencia": "1-2-3",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Press militar sentado con barra",
+            "Series": 5,
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Press militar sentado con barra al fallo (mas ligero)",
+            "Series": 1,
+            "Repeticiones": "al fallo",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Elevaciones laterales, frontales y posteriores con cable",
+            "Series": 4,
+            "Repeticiones": "12",
+            "Cadencia": "",
+            "Notas": ""
+          },
+
+          {
+            "Ejercicio": "Extensión de triceps con polea",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": "12 muy pesadas y al fallo con poco peso en cada serie"
+          },
+          {
+            "Ejercicio": "Fondos en máquina",
+            "Series": 4,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          }
+        ]
+      },
+      {
+        "Dia": "Viernes",
+        "Rutina": "Espalda, biceps y trapecios",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Peso muerto rumano",
+            "Series": 3,
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Remo inclinado con barra con agarre supinado",
+            "Series": 4,
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Dominadas (pueden ser con lastre)",
+            "Series": 4,
+            "Repeticiones": "fallo",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Remo con mancuerna",
+            "Series": 3,
+            "Repeticiones": "al fallo",
+            "Cadencia": "",
+            "Notas": "Lo mas pesado posible para que salgan máximo 8 reps"
+          },
+          {
+            "Ejercicio": "Curl con mancuerna descendente a 3 pesos",
+            "Series": 4,
+            "Repeticiones": "al fallo",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Curl con barra z en polea",
+            "Series": 4,
+            "Repeticiones": "al fallo",
+            "Cadencia": "",
+            "Notas": "Con peso bajo (bombeo)"
+          },
+
+          {
+            "Ejercicio": "Encogimientos de hombros con mancuernas",
+            "Series": 4,
+            "Repeticiones": 20,
+            "Cadencia": "",
+            "Notas": ""
+          }
+        ]
+      },
+      {
+        "Dia": "Sábado",
+        "Rutina": "Pierna",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Sentadilla frontal con barra + sentadilla corta al fallo (biserie)",
+            "Series": 4,
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": "La sentadilla corta al fallo es sin peso, las piernas muy flexionadas"
+          },
+          {
+            "Ejercicio": "Curl femoral de pie",
+            "Series": 4,
+            "Repeticiones": "al fallo",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Desplantes caminando con 3 desplantes por paso",
+            "Series": 4,
+            "Repeticiones": "al fallo",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Extensiones para cuádriceps en máquina",
+            "Series": 4,
+            "Repeticiones": "Al fallo",
+            "Cadencia": "",
+            "Notas": "Realizar con peso alto"
+          },
+          {
+            "Ejercicio": "Elevación de pelvis",
+            "Series": 4,
+            "Repeticiones": "20",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Pantorrilla a 3 posiciones en prensa",
+            "Series": 4,
+            "Repeticiones": "12",
+            "Cadencia": "",
+            "Notas": "Usar cualquier otra máquina de pantorrilla"
           }
         ]
       }
