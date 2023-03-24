@@ -22,6 +22,12 @@ export default function Home() {
       >
         Ir a mis rutinas
       </Link>
+      <Link
+        href="/indicaciones"
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 my-3 px-4 rounded"
+      >
+        Indicaciones generales
+      </Link>
     </div>
   );
 }
