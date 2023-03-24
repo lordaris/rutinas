@@ -5,7 +5,7 @@ import { AiFillHome } from "react-icons/ai";
 export default function Home() {
   return (
 
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center min-h-screen">
       <Head>
         <title>Indicaciones generales</title>
         <link rel="icon" href="/favicon.ico" />
@@ -85,13 +85,6 @@ export default function Home() {
           ¡Recuerda siempre escuchar a tu cuerpo y no forzarlo más allá de sus
           límites!
         </p>
-
-        <Link
-          href="/"
-          className="bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-700"
-        >
-          Regresar
-        </Link>
       </main>
     </div>
   );
