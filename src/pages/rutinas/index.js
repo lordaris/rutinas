@@ -5,7 +5,7 @@ export default function Routines() {
   // Add a return button to the page
   return (
     <>
-      <nav className="flex justify-center navbar shadows">
+      <nav className="flex justify-center navbar shadows ">
         <Link
           href="/"
           className="flex items-center text-gray-700 hover:text-gray-900 py-10"

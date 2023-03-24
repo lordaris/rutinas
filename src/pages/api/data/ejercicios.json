@@ -361,7 +361,7 @@
             "Notas": ""
           },
           {
-            "Ejercicio": "Press en banco inclinado",
+            "Ejercicio": "Press en banco plano",
             "Series": 4,
             "Repeticiones": 12,
             "Cadencia": "3-2-1",
@@ -1266,6 +1266,197 @@
             "Repeticiones": "12",
             "Cadencia": "",
             "Notas": "Usar cualquier otra máquina de pantorrilla"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": 7,
+    "Descripcion": "Full Body con fuerza, hipertrofia, ejercicios funcionales y repasos",
+    "Dias": [
+      {
+        "Dia": "Lunes",
+        "Rutina": "Fuerza",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Sentadilla con barra",
+            "Series": 4,
+            "Repeticiones": 6,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Peso muerto rumano",
+            "Series": 4,
+            "Repeticiones": 8,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Press de banca",
+            "Series": 4,
+            "Repeticiones": 6,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Dominadas",
+            "Series": 4,
+            "Repeticiones": "al fallo",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Curl de bíceps con mancuernas",
+            "Series": 3,
+            "Repeticiones": 10,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Fondos en paralelas",
+            "Series": 3,
+            "Repeticiones": "al fallo",
+            "Cadencia": "",
+            "Notas": ""
+          }
+        ]
+      },
+      {
+        "Dia": "Martes",
+        "Rutina": "Hipertrofia",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Press militar con mancuernas",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Remo con mancuernas",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Aperturas con mancuernas",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Curl de bíceps con barra Z",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Extensión de tríceps con mancuernas (patada de mula)",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Elevaciones laterales con mancuernas",
+            "Series": 3,
+            "Repeticiones": 12,
+            "Cadencia": "",
+            "Notas": ""
+          }
+        ]
+      },
+      {
+        "Dia": "Miércoles",
+        "Rutina": "Repasos",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Curl para antebrazos",
+            "Series": 3,
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Encogimiento de hombros",
+            "Series": 3,
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Elevaciones frontales con mancuernas",
+            "Series": 3,
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Elevaciones laterales con mancuernas",
+            "Series": 3,
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Encogimiento con polea alta (abdomen)",
+            "Series": 3,
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": "Se coloca en una polea alta una soga; se sujeta la cuerda dando la espalda a la polea, con las manos sobre la cabeza, con agarre neutro; se coloca el cuerpo en cuclillas y se contrae el abdomen bajando la cuerda"
+          },
+          {
+            "Ejercicio": "Elevación de pelvis",
+            "Series": 3,
+            "Repeticiones": 15,
+            "Cadencia": "",
+            "Notas": ""
+          }
+        ]
+      },
+      {
+        "Dia": "Jueves",
+        "Rutina": "Funcional",
+        "Ejercicios": [
+          {
+            "Ejercicio": "Burpees",
+            "Series": 3,
+            "Repeticiones": 10,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Sentadillas con salto",
+            "Series": 3,
+            "Repeticiones": 10,
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Dominadas",
+            "Series": 3,
+            "Repeticiones": "al fallo",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Fondos en paralelas",
+            "Series": 3,
+            "Repeticiones": "al fallo",
+            "Cadencia": "",
+            "Notas": ""
+          },
+          {
+            "Ejercicio": "Sentadillas con salto",
+            "Series": 3,
+            "Repeticiones": 10,
+            "Cadencia": "",
+            "Notas": ""
           }
         ]
       }
