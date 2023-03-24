@@ -1,8 +1,10 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import { AiFillHome } from "react-icons/ai";
 export default function Home() {
   return (
+
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <Head>
         <title>Indicaciones generales</title>
@@ -10,7 +12,15 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-4xl font-bold">Indicaciones generales</h1>
+       <nav className="flex justify-center navbar shadows">
+        <Link
+          href={"/"}
+          className="flex items-center text-gray-700 px-10 hover:text-gray-900 py-10"
+        >
+          <AiFillHome className="w-6 h-6 mr-2" />
+        </Link>
+      </nav>
+ <h1 className="text-4xl font-bold">Indicaciones generales</h1>
         <p className="mt-8 text-xl">
           <span className={"font-bold"}>Calentar</span> por lo menos 5 minutos
           antes de tu rutina.
