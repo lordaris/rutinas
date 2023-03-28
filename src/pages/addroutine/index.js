@@ -14,11 +14,13 @@ const NewRoutine = () => {
       const data = await res.json();
       setCsrfToken(data.csrfToken);
     }
+
     fetchCsrfToken();
   }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("Enviando objeto:", JSON.stringify(routine));
     const response = await fetch("http://localhost:8000/rutinas/", {
       method: "POST",
       headers: {
@@ -29,35 +31,22 @@ const NewRoutine = () => {
     });
     if (response.ok) {
       alert("Rutina creada exitosamente!");
-
-      console.log(routine);
+      setRoutine({
+        nombre: "",
+        dias: [],
+      });
     } else {
-      alert("Error al crear la rutina");
-      console.log(routine);
-      console.log(response);
+      alert("Error al crear rutina");
     }
   };
-
-  /* Descomentar si el otro metodo no funciona
-  const handleInputChange = (e, dayIndex, exerciseIndex) => {
-    const { name, value } = e.target;
-    const dias = [...routine.dias];
-    if (dayIndex !== undefined && exerciseIndex !== undefined) {
-      dias[dayIndex].ejercicios[exerciseIndex][name] = value;
-    } else if (dayIndex !== undefined) {
-      dias[dayIndex][name] = value;
-    } else {
-      setRoutine({ ...routine, [name]: value });
-    }
-    setRoutine({ ...routine, dias });
-  };
-*/
 
   const handleInputChange = (e, dayIndex, exerciseIndex) => {
     const { name, value } = e.target;
     const dias = [...routine.dias];
     if (dayIndex !== undefined && exerciseIndex !== undefined) {
-      dias[dayIndex].ejercicios[exerciseIndex][name] = value;
+      dias[dayIndex].ejercicios[exerciseIndex][
+        name === "ejercicio" ? "nombre" : name
+      ] = value;
     } else if (dayIndex !== undefined) {
       dias[dayIndex][name] = value;
     } else {
@@ -71,16 +60,20 @@ const NewRoutine = () => {
   const addDay = () => {
     const dias = [...routine.dias];
     dias.push({
-      nombre: "",
-      ejercicios: [],
+      dia: "",
+      enfoque: "",
+      ejercicios: [
+        {
+          nombre: "",
+          series: "",
+          repeticiones: "",
+          cadencia: "",
+          notas: "",
+        },
+      ],
     });
-    setRoutine({ ...routine, dias });
-  };
-
-  const removeDay = (index) => {
-    const dias = [...routine.dias];
-    dias.splice(index, 1);
-    setRoutine({ ...routine, dias });
+    const updatedRoutine = { ...routine, dias };
+    setRoutine(updatedRoutine);
   };
 
   const addExercise = (dayIndex) => {
@@ -89,277 +82,204 @@ const NewRoutine = () => {
       nombre: "",
       series: "",
       repeticiones: "",
+      cadencia: "",
       notas: "",
     });
-    setRoutine({ ...routine, dias });
+    const updatedRoutine = { ...routine, dias };
+    setRoutine(updatedRoutine);
   };
-
+  const removeDay = (dayIndex) => {
+    const dias = [...routine.dias];
+    dias.splice(dayIndex, 1);
+    const updatedRoutine = { ...routine, dias };
+    setRoutine(updatedRoutine);
+  };
   const removeExercise = (dayIndex, exerciseIndex) => {
     const dias = [...routine.dias];
     dias[dayIndex].ejercicios.splice(exerciseIndex, 1);
-    setRoutine({ ...routine, dias });
+    const updatedRoutine = { ...routine, dias };
+    setRoutine(updatedRoutine);
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-      <div className="mb-4">
-        <label className="block mb-2 font-bold">Nombre de la rutina</label>
-        <input
-          type="text"
-          name="nombre"
-          value={routine.nombre}
-          onChange={(e) => setRoutine({ ...routine, nombre: e.target.value })}
-          className="w-full border rounded py-2 px-3"
-        />
-      </div>
-      <div className="mb-4">
-        <label className="block mb-2 font-bold">Dias</label>
-        <button
-          type="button"
-          onClick={addDay}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-2"
-        >
-          Agregar día
-        </button>
-        {routine.dias.map((day, dayIndex) => (
-          <div key={dayIndex} className="mb-4">
-            <div className="mb-2">
-              <label className="block mb-1 font-bold">Día</label>
-              <input
-                type="text"
-                name="dia"
-                value={day.dia}
-                onChange={(e) => {
-                  const dias = [...routine.dias];
-                  dias[dayIndex].dia = e.target.value;
-                  setRoutine({ ...routine, dias });
-                }}
-                className="w-full border rounded py-2 px-3"
-              />
-            </div>
-            <div className="mb-2">
-              <label className="block mb-1 font-bold">Enfoque</label>
-              <input
-                type="text"
-                name="enfoque"
-                value={day.enfoque}
-                onChange={(e) => {
-                  const dias = [...routine.dias];
-                  dias[dayIndex].enfoque = e.target.value;
-                  setRoutine({ ...routine, dias });
-                }}
-                className="w-full border rounded py-2 px-3"
-              />
-            </div>
-            <div className="mb-2">
-              <label className="block mb-1 font-bold">Ejercicios</label>
+    <>
+      <h1 className="text-3xl font-bold mb-6 text-center">Crear Rutina</h1>
+      <form onSubmit={handleSubmit}>
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2">
+            Nombre de la rutina
+          </label>
+          <input
+            type="text"
+            name="nombre"
+            value={routine.nombre}
+            onChange={handleInputChange}
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            placeholder="Nombre de la rutina"
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2">
+            Días
+          </label>
+          {routine.dias.map((day, dayIndex) => (
+            <div key={dayIndex} className="mb-4">
+              <div className="flex justify-between">
+                <div className="w-1/2 mr-2">
+                  <label className="block text-gray-700 text-sm font-bold mb-2">
+                    Día
+                  </label>
+                  <input
+                    type="text"
+                    name="dia"
+                    value={day.dia}
+                    onChange={(e) => handleInputChange(e, dayIndex)}
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder="Día"
+                  />
+                </div>
+                <div className="w-1/2 ml-2">
+                  <label className="block text-gray-700 text-sm font-bold mb-2">
+                    Enfoque
+                  </label>
+                  <input
+                    type="text"
+                    name="enfoque"
+                    value={day.enfoque}
+                    onChange={(e) => handleInputChange(e, dayIndex)}
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder="Enfoque"
+                  />
+                </div>
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 text-sm font-bold mb-2">
+                  Ejercicios
+                </label>
+                {day.ejercicios.map((exercise, exerciseIndex) => (
+                  <div key={exerciseIndex} className="mb-4">
+                    <div className="flex justify-between">
+                      <div className="w-1/3 mr-2">
+                        <label className="block text-gray-700 text-sm font-bold mb-2">
+                          Ejercicio
+                        </label>
+                        <input
+                          type="text"
+                          name="ejercicio"
+                          value={exercise.ejercicio}
+                          onChange={(e) =>
+                            handleInputChange(e, dayIndex, exerciseIndex)
+                          }
+                          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                          placeholder="Ejercicio"
+                        />
+                      </div>
+                      <div className="w-1/3 mr-2">
+                        <label className="block text-gray-700 text-sm font-bold mb-2">
+                          Series
+                        </label>
+                        <input
+                          type="text"
+                          name="series"
+                          value={exercise.series}
+                          onChange={(e) =>
+                            handleInputChange(e, dayIndex, exerciseIndex)
+                          }
+                          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                          placeholder="Series"
+                        />
+                      </div>
+                      <div className="w-1/3 ml-2">
+                        <label className="block text-gray-700 text-sm font-bold mb-2">
+                          Repeticiones
+                        </label>
+                        <input
+                          type="text"
+                          name="repeticiones"
+                          value={exercise.repeticiones}
+                          onChange={(e) =>
+                            handleInputChange(e, dayIndex, exerciseIndex)
+                          }
+                          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                          placeholder="Repeticiones"
+                        />
+                      </div>
+                      <div className="w-1/3 ml-2">
+                        <label className="block text-gray-700 text-sm font-bold mb-2">
+                          Cadencia
+                        </label>
+                        <input
+                          type="text"
+                          name="cadencia"
+                          value={exercise.cadencia}
+                          onChange={(e) =>
+                            handleInputChange(e, dayIndex, exerciseIndex)
+                          }
+                          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                          placeholder="Cadencia"
+                        />
+                      </div>
+                      <div className="w-1/3 ml-2">
+                        <label className="block text-gray-700 text-sm font-bold mb-2">
+                          Notas
+                        </label>
+                        <input
+                          type="text"
+                          name="notas"
+                          value={exercise.notas}
+                          onChange={(e) =>
+                            handleInputChange(e, dayIndex, exerciseIndex)
+                          }
+                          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                          placeholder="Notas"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => removeExercise(dayIndex, exerciseIndex)}
+                      className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    >
+                      Eliminar ejercicio
+                    </button>
+                  </div>
+                ))}
+                <button
+                  type="button"
+                  onClick={() => addExercise(dayIndex)}
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                >
+                  Agregar ejercicio
+                </button>
+              </div>
               <button
                 type="button"
-                onClick={() => addExercise(dayIndex)}
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-2"
+                onClick={() => removeDay(dayIndex)}
+                className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               >
-                Agregar ejercicio
+                Eliminar día
               </button>
-              {day.ejercicios.map((exercise, exerciseIndex) => (
-                <div key={exerciseIndex} className="mb-4">
-                  <div className="mb-2">
-                    <label className="block mb-1 font-bold">Nombre</label>
-                    <input
-                      type="text"
-                      name="nombre"
-                      value={exercise.nombre}
-                      onChange={(e) =>
-                        handleInputChange(e, dayIndex, exerciseIndex)
-                      }
-                      className="w-full border rounded py-2 px-3"
-                    />
-                  </div>
-                  <div className="mb-2">
-                    <label className="block mb-1 font-bold">Series</label>
-                    <input
-                      type="text"
-                      name="series"
-                      value={exercise.series}
-                      onChange={(e) =>
-                        handleInputChange(e, dayIndex, exerciseIndex)
-                      }
-                      className="w-full border rounded py-2 px-3"
-                    />
-                  </div>
-                  <div className="mb-2">
-                    <label className="block mb-1 font-bold">Repeticiones</label>
-                    <input
-                      type="text"
-                      name="repeticiones"
-                      value={exercise.repeticiones}
-                      onChange={(e) =>
-                        handleInputChange(e, dayIndex, exerciseIndex)
-                      }
-                      className="w-full border rounded py-2 px-3"
-                    />
-                  </div>
-                  <div>
-                    <label className="block mb-1 font-bold">Cadencia</label>
-                    <input
-                      type="text"
-                      name="cadencia"
-                      value={exercise.cadencia}
-                      onChange={(e) =>
-                        handleInputChange(e, dayIndex, exerciseIndex)
-                      }
-                      className="w-full border rounded py-2 px-3"
-                    ></input>
-                  </div>
-                  <div className="mb-2">
-                    <label className="block mb-1 font-bold">Notas</label>
-                    <input
-                      type="text"
-                      name="notas"
-                      value={exercise.notas}
-                      onChange={(e) =>
-                        handleInputChange(e, dayIndex, exerciseIndex)
-                      }
-                      className="w-full border rounded py-2 px-3"
-                    />
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => removeExercise(dayIndex, exerciseIndex)}
-                    className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
-                  >
-                    Eliminar ejercicio
-                  </button>
-                </div>
-              ))}
             </div>
-            <button
-              type="button"
-              onClick={() => removeDay(dayIndex)}
-              className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
-            >
-              Eliminar día
-            </button>
-          </div>
-        ))}
-      </div>
-      <button
-        type="submit"
-        className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-      >
-        Crear rutina
-      </button>
-    </form>
+          ))}
+          <button
+            type="button"
+            onClick={addDay}
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          >
+            Agregar día
+          </button>
+        </div>
+        <div className="flex justify-center">
+          <button
+            type="submit"
+            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          >
+            Crear rutina
+          </button>
+        </div>
+      </form>
+    </>
   );
 };
 
 export default NewRoutine;
-
-/* Descomentar si el otro código no funciona
-( <form onSubmit={handleSubmit}>
-  <div>
-    <label>Nombre de la rutina</label>
-    <input
-      type="text"
-      name="nombre"
-      value={routine.nombre}
-      onChange={(e) => setRoutine({ ...routine, nombre: e.target.value })}
-    />
-  </div>
-  <div>
-    <label>Dias</label>
-    <button type="button" onClick={addDay}>
-      Agregar dia
-    </button>
-    {routine.dias.map((day, dayIndex) => (
-      <div key={dayIndex}>
-        <label>Dia</label>
-        <input
-          type="text"
-          name="dia"
-          value={day.dia}
-          onChange={(e) => {
-            const dias = [...routine.dias];
-            dias[dayIndex].dia = e.target.value;
-            setRoutine({ ...routine, dias });
-          }}
-        />
-        <label>Enfoque</label>
-        <input
-          type="text"
-          name="enfoque"
-          value={day.enfoque}
-          onChange={(e) => {
-            const dias = [...routine.dias];
-            dias[dayIndex].enfoque = e.target.value;
-            setRoutine({ ...routine, dias });
-          }}
-        />
-        <button type="button" onClick={() => removeDay(dayIndex)}>
-          Eliminar dia
-        </button>
-        <button type="button" onClick={() => addExercise(dayIndex)}>
-          Agregar ejercicio
-        </button>
-        {day.ejercicios.map((exercise, exerciseIndex) => (
-          <div key={exerciseIndex}>
-            <label>Nombre</label>
-            <input
-              type="text"
-              name="nombre"
-              value={exercise.nombre}
-              onChange={(e) =>
-                handleInputChange(e, dayIndex, exerciseIndex)
-              }
-            />
-            <label>Series</label>
-            <input
-              type="text"
-              name="series"
-              value={exercise.series}
-              onChange={(e) =>
-                handleInputChange(e, dayIndex, exerciseIndex)
-              }
-            />
-            <label>Repeticiones</label>
-            <input
-              type="text"
-              name="repeticiones"
-              value={exercise.repeticiones}
-              onChange={(e) =>
-                handleInputChange(e, dayIndex, exerciseIndex)
-              }
-            />
-            <label>Cadencia</label>
-            <input
-              type="text"
-              name="cadencia"
-              value={exercise.cadencia}
-              onChange={(e) =>
-                handleInputChange(e, dayIndex, exerciseIndex)
-              }
-            />
-            <label>Notas</label>
-            <input
-              type="text"
-              name="notas"
-              value={exercise.notas}
-              onChange={(e) =>
-                handleInputChange(e, dayIndex, exerciseIndex)
-              }
-            />
-            <button
-              type="button"
-              onClick={() => removeExercise(dayIndex, exerciseIndex)}
-            >
-              Eliminar ejercicio
-            </button>
-          </div>
-        ))}
-      </div>
-    ))}
-  </div>
-  <button type="submit">Crear rutina</button>
-</form>
-);
-};
-*/
