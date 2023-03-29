@@ -5,7 +5,7 @@ let csrfTokenSite = "http://localhost:8000/csrf-token/";
 import react from "react";
 
 // El Login de Django se encuentra en:
-let authSite = "http://127.0.0.1:8000/api-auth/login/?next=/";
+let authSite = "http://lordaris.pythonanywhere.com/api-auth/login/?next=/";
 
 function Login() {
   const [username, setUsername] = useState("");
