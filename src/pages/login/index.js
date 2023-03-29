@@ -22,12 +22,13 @@ function Login() {
       }
     }
     checkSession();
-  });
+  }, []);
   // Get the CSRF token from the Django API. Adding an empty dependency array to avoid infinite loop
   useEffect(() => {
     async function fetchCsrfToken() {
       const res = await fetch(csrfTokenSite);
       const data = await res.json();
+      console.log(data);
       setCsrfToken(data.csrfToken);
     }
     fetchCsrfToken();
@@ -44,6 +45,7 @@ function Login() {
       },
       body: JSON.stringify({ username, password }),
     });
+    console.log(response);
     if (response.status === 200) {
       setIsLoggedIn(true);
     }
