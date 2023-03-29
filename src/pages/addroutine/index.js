@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import fetch from "isomorphic-unfetch";
+import Link from "next/link";
+import { IoCaretBackOutline } from "react-icons/io5";
+import { AiFillHome } from "react-icons/ai";
 
 const NewRoutine = () => {
   const [csrfToken, setCsrfToken] = useState("");
@@ -108,181 +111,199 @@ const NewRoutine = () => {
 
   return (
     <>
-      <h1 className="text-3xl font-bold mb-6 text-center">Crear Rutina</h1>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">
-            Nombre de la rutina
-          </label>
-          <input
-            type="text"
-            name="nombre"
-            value={routine.nombre}
-            onChange={handleInputChange}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            placeholder="Nombre de la rutina"
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">
-            Días
-          </label>
-          {routine.dias.map((day, dayIndex) => (
-            <div key={dayIndex} className="mb-4">
-              <div className="flex justify-between">
-                <div className="w-1/2 mr-2">
-                  <label className="block text-gray-700 text-sm font-bold mb-2">
-                    Día
-                  </label>
-                  <input
-                    type="text"
-                    name="dia"
-                    value={day.dia}
-                    onChange={(e) => handleInputChange(e, dayIndex)}
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    placeholder="Día"
-                  />
-                </div>
-                <div className="w-1/2 ml-2">
-                  <label className="block text-gray-700 text-sm font-bold mb-2">
-                    Enfoque
-                  </label>
-                  <input
-                    type="text"
-                    name="enfoque"
-                    value={day.enfoque}
-                    onChange={(e) => handleInputChange(e, dayIndex)}
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    placeholder="Enfoque"
-                  />
-                </div>
-              </div>
-              <div className="mb-4">
-                <label className="block text-gray-700 text-sm font-bold mb-2">
-                  Ejercicios
-                </label>
-                {day.ejercicios.map((exercise, exerciseIndex) => (
-                  <div key={exerciseIndex} className="mb-4">
-                    <div className="flex justify-between">
-                      <div className="w-1/3 mr-2">
-                        <label className="block text-gray-700 text-sm font-bold mb-2">
-                          Ejercicio
-                        </label>
-                        <input
-                          type="text"
-                          name="ejercicio"
-                          value={exercise.ejercicio}
-                          onChange={(e) =>
-                            handleInputChange(e, dayIndex, exerciseIndex)
-                          }
-                          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                          placeholder="Ejercicio"
-                        />
-                      </div>
-                      <div className="w-1/3 mr-2">
-                        <label className="block text-gray-700 text-sm font-bold mb-2">
-                          Series
-                        </label>
-                        <input
-                          type="text"
-                          name="series"
-                          value={exercise.series}
-                          onChange={(e) =>
-                            handleInputChange(e, dayIndex, exerciseIndex)
-                          }
-                          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                          placeholder="Series"
-                        />
-                      </div>
-                      <div className="w-1/3 ml-2">
-                        <label className="block text-gray-700 text-sm font-bold mb-2">
-                          Repeticiones
-                        </label>
-                        <input
-                          type="text"
-                          name="repeticiones"
-                          value={exercise.repeticiones}
-                          onChange={(e) =>
-                            handleInputChange(e, dayIndex, exerciseIndex)
-                          }
-                          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                          placeholder="Repeticiones"
-                        />
-                      </div>
-                      <div className="w-1/3 ml-2">
-                        <label className="block text-gray-700 text-sm font-bold mb-2">
-                          Cadencia
-                        </label>
-                        <input
-                          type="text"
-                          name="cadencia"
-                          value={exercise.cadencia}
-                          onChange={(e) =>
-                            handleInputChange(e, dayIndex, exerciseIndex)
-                          }
-                          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                          placeholder="Cadencia"
-                        />
-                      </div>
-                      <div className="w-1/3 ml-2">
-                        <label className="block text-gray-700 text-sm font-bold mb-2">
-                          Notas
-                        </label>
-                        <input
-                          type="text"
-                          name="notas"
-                          value={exercise.notas}
-                          onChange={(e) =>
-                            handleInputChange(e, dayIndex, exerciseIndex)
-                          }
-                          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                          placeholder="Notas"
-                        />
-                      </div>
-                    </div>
-                    <button
-                      type="button"
-                      onClick={() => removeExercise(dayIndex, exerciseIndex)}
-                      className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    >
-                      Eliminar ejercicio
-                    </button>
+      <nav className="flex justify-center navbar shadows">
+        <Link
+          href="/rutinas"
+          className="flex items-center text-gray-700 hover:text-gray-900 py-10"
+        >
+          <IoCaretBackOutline className="w-6 h-6 mr-2" />
+          <span className="font-bold">Regresar</span>
+        </Link>
+        <Link
+          href={"/"}
+          className="flex items-center text-gray-700 px-10 hover:text-gray-900 py-10"
+        >
+          <AiFillHome className="w-6 h-6 mr-2" />
+        </Link>
+      </nav>
+      <div className="container mx-auto">
+        <h1 className="text-3xl font-bold mb-6 text-center">Crear Rutina</h1>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">
+              Nombre de la rutina
+            </label>
+            <input
+              type="text"
+              name="nombre"
+              value={routine.nombre}
+              onChange={handleInputChange}
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              placeholder="(principiantes, avanzados, full body, funcional, etc)"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">
+              Días
+            </label>
+            {routine.dias.map((day, dayIndex) => (
+              <div key={dayIndex} className="mb-4">
+                <div className="flex justify-between">
+                  <div className="w-1/2 mr-2">
+                    <label className="block text-gray-700 text-sm font-bold mb-2">
+                      Día
+                    </label>
+                    <input
+                      type="text"
+                      name="dia"
+                      value={day.dia}
+                      onChange={(e) => handleInputChange(e, dayIndex)}
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      placeholder="Día(s) de la semana"
+                    />
                   </div>
-                ))}
+                  <div className="w-1/2 ml-2">
+                    <label className="block text-gray-700 text-sm font-bold mb-2">
+                      Enfoque
+                    </label>
+                    <input
+                      type="text"
+                      name="enfoque"
+                      value={day.enfoque}
+                      onChange={(e) => handleInputChange(e, dayIndex)}
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      placeholder="(ej. Pierna)"
+                    />
+                  </div>
+                </div>
+                <div className="mb-4">
+                  <label className="block text-gray-700 text-sm font-bold mb-2">
+                    Ejercicios
+                  </label>
+                  {day.ejercicios.map((exercise, exerciseIndex) => (
+                    <div key={exerciseIndex} className="mb-4">
+                      <div className="flex flex-col">
+                        <div className="mr-2">
+                          <label className="block text-gray-700 text-sm font-bold mb-2">
+                            Ejercicio
+                          </label>
+                          <input
+                            type="text"
+                            name="ejercicio"
+                            value={exercise.ejercicio}
+                            onChange={(e) =>
+                              handleInputChange(e, dayIndex, exerciseIndex)
+                            }
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            placeholder="Nombre del ejercicio"
+                          />
+                        </div>
+
+                        <div className="mr-2">
+                          <label className="block text-gray-700 text-sm font-bold mb-2">
+                            Series
+                          </label>
+                          <input
+                            type="text"
+                            name="series"
+                            value={exercise.series}
+                            onChange={(e) =>
+                              handleInputChange(e, dayIndex, exerciseIndex)
+                            }
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            placeholder="# de series"
+                          />
+                        </div>
+                        <div className="ml-2">
+                          <label className="block text-gray-700 text-sm font-bold mb-2">
+                            Repeticiones
+                          </label>
+                          <input
+                            type="text"
+                            name="repeticiones"
+                            value={exercise.repeticiones}
+                            onChange={(e) =>
+                              handleInputChange(e, dayIndex, exerciseIndex)
+                            }
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            placeholder="# de repeticiones"
+                          />
+                        </div>
+                        <div className="ml-2">
+                          <label className="block text-gray-700 text-sm font-bold mb-2">
+                            Cadencia
+                          </label>
+                          <input
+                            type="text"
+                            name="cadencia"
+                            value={exercise.cadencia}
+                            onChange={(e) =>
+                              handleInputChange(e, dayIndex, exerciseIndex)
+                            }
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            placeholder="(ej. 3-2-1)"
+                          />
+                        </div>
+                        <div className=" ml-2">
+                          <label className="block text-gray-700 text-sm font-bold mb-2">
+                            Notas
+                          </label>
+                          <input
+                            type="text"
+                            name="notas"
+                            value={exercise.notas}
+                            onChange={(e) =>
+                              handleInputChange(e, dayIndex, exerciseIndex)
+                            }
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            placeholder="Notas"
+                          />
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => removeExercise(dayIndex, exerciseIndex)}
+                        className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                      >
+                        Eliminar ejercicio
+                      </button>
+                    </div>
+                  ))}
+                  <button
+                    type="button"
+                    onClick={() => addExercise(dayIndex)}
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  >
+                    Agregar ejercicio
+                  </button>
+                </div>
                 <button
                   type="button"
-                  onClick={() => addExercise(dayIndex)}
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  onClick={() => removeDay(dayIndex)}
+                  className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 >
-                  Agregar ejercicio
+                  Eliminar día
                 </button>
               </div>
-              <button
-                type="button"
-                onClick={() => removeDay(dayIndex)}
-                className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              >
-                Eliminar día
-              </button>
-            </div>
-          ))}
-          <button
-            type="button"
-            onClick={addDay}
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          >
-            Agregar día
-          </button>
-        </div>
-        <div className="flex justify-center">
-          <button
-            type="submit"
-            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          >
-            Crear rutina
-          </button>
-        </div>
-      </form>
+            ))}
+            <button
+              type="button"
+              onClick={addDay}
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            >
+              Agregar día
+            </button>
+          </div>
+          <div className="flex justify-center">
+            <button
+              type="submit"
+              className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            >
+              Crear rutina
+            </button>
+          </div>
+        </form>
+      </div>
     </>
   );
 };
