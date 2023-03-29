@@ -10,7 +10,9 @@ const NewRoutine = () => {
 
   useEffect(() => {
     async function fetchCsrfToken() {
-      const res = await fetch("http://localhost:8000/csrf-token/");
+      const res = await fetch(
+        "http://lordaris.pythonanywhere.com/csrf-token//"
+      );
       const data = await res.json();
       setCsrfToken(data.csrfToken);
     }
@@ -21,14 +23,17 @@ const NewRoutine = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Enviando objeto:", JSON.stringify(routine));
-    const response = await fetch("http://localhost:8000/rutinas/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-CSRFToken": csrfToken,
-      },
-      body: JSON.stringify(routine),
-    });
+    const response = await fetch(
+      "http://lordaris.pythonanywhere.com/rutinas/",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-CSRFToken": csrfToken,
+        },
+        body: JSON.stringify(routine),
+      }
+    );
     if (response.ok) {
       alert("Rutina creada exitosamente!");
       setRoutine({
