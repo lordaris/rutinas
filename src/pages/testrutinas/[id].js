@@ -13,7 +13,7 @@ export default function Routine() {
   useEffect(() => {
     async function fetchRoutine() {
       const res = await fetch(
-        `http://lordaris.pythonanywhere.com/rutinas/${id}`
+        `https://lordaris.pythonanywhere.com/rutinas/${id}`
       );
       const data = await res.json();
       console.log(data);

@@ -5,7 +5,7 @@ export default function Test() {
   const [rutina, setRutina] = useState([]);
 
   async function fetchWorkout() {
-    const res = await fetch("http://lordaris.pythonanywhere.com/rutinas/");
+    const res = await fetch("https://lordaris.pythonanywhere.com/rutinas/");
     const data = await res.json();
     setRutina(data.results);
     console.log(data.results);

@@ -11,7 +11,7 @@ const NewRoutine = () => {
   useEffect(() => {
     async function fetchCsrfToken() {
       const res = await fetch(
-        "http://lordaris.pythonanywhere.com/csrf-token//"
+        "https://lordaris.pythonanywhere.com/csrf-token//"
       );
       const data = await res.json();
       setCsrfToken(data.csrfToken);
@@ -24,7 +24,7 @@ const NewRoutine = () => {
     e.preventDefault();
     console.log("Enviando objeto:", JSON.stringify(routine));
     const response = await fetch(
-      "http://lordaris.pythonanywhere.com/rutinas/",
+      "https://lordaris.pythonanywhere.com/rutinas/",
       {
         method: "POST",
         headers: {
