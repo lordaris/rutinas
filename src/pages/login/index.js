@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import fetch from "isomorphic-unfetch";
 // El siguiente archivo contiene el csrf token de la api de Django en formato json
-let csrfTokenSite = "http://localhost:8000/csrf-token/";
+let csrfTokenSite = "http://lordaris.pythonanywhere.com/csrf-token/";
 import react from "react";
 
 // El Login de Django se encuentra en:
