@@ -10,7 +10,7 @@ import remarkGfm from "remark-gfm";
 
 const rutinasDirectory = path.join(
   process.cwd(),
-  "./src/pages/api/data/rutinas"
+  "./src/pages/api/data/rutinasold"
 );
 
 export async function getRutinas() {

@@ -1,21 +1,29 @@
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import Link from "next/link";
 import { IoCaretBackOutline } from "react-icons/io5";
 import { AiFillHome } from "react-icons/ai";
-import workouts from "../api/data/ejercicios.json";
-import Link from "next/link";
 
-const WorkoutPage = ({ workout }) => {
+export default function Routine() {
+  const [routine, setRoutine] = useState({});
   const [selectedDay, setSelectedDay] = useState(null);
-
   const router = useRouter();
+  const { id } = router.query;
 
-  // This is the fallback case, where the page is being rendered
-  if (router.isFallback) {
-    return <div>Loading...</div>;
-  }
+  useEffect(() => {
+    async function fetchRoutine() {
+      const res = await fetch(
+        `https://lordaris.pythonanywhere.com/rutinas/${id}`
+      );
+      const data = await res.json();
+      console.log(data);
+      setRoutine(data);
+    }
 
-  const { Dias } = workout;
+    if (id) {
+      fetchRoutine();
+    }
+  }, [id]);
 
   const toggleDetails = (dia) => {
     if (selectedDay === dia) {
@@ -24,9 +32,8 @@ const WorkoutPage = ({ workout }) => {
       setSelectedDay(dia);
     }
   };
-
   return (
-    <>
+    <div>
       <nav className="flex justify-center navbar shadows">
         <Link
           href="/rutinas"
@@ -44,72 +51,50 @@ const WorkoutPage = ({ workout }) => {
       </nav>
       <div className={"container mx-auto my-10"}>
         <h1 className={"text-3xl font-bold mb-6 text-center"}>
-          Rutina: {workout.Descripcion}
+          Rutina: {routine.nombre}
         </h1>
         <div className={"grid grid-cols-1 md:grid-cols-2 gap-6"}>
-          {Dias.map(({ Dia, Rutina, Ejercicios }) => (
-            <div key={Dia} className={"bg-white rounded-lg shadow p-6"}>
-              <div>
-                <h2
-                  className={"text-xl font-bold mb-2 text-gray-700 mb-1"}
-                  onClick={() => toggleDetails(Dia)}
-                >
-                  Día: {Dia} ({Rutina})
-                </h2>
-              </div>
-              {selectedDay === Dia && (
-                <ul>
-                  {Ejercicios.map(
-                    ({ Ejercicio, Series, Repeticiones, Cadencia, Notas }) => (
-                      <li key={Ejercicio} className={"mb-4"}>
-                        <h4 className={"font-medium"}>
-                          Ejercicio: {Ejercicio}
-                        </h4>
-
-                        <p className={"text-gray-700 mb-1"}>Series: {Series}</p>
-                        <p className="text-gray-700 mb-1">
-                          Repeticiones: {Repeticiones}
-                        </p>
-                        {Cadencia && Cadencia.trim() !== "" && (
-                          <p className="text-gray-700 mb-1">
-                            Cadencia: {Cadencia}
+          {routine.dias &&
+            routine.dias.map((dia) => (
+              <div key={dia.id} className={"bg-white rounded-lg shadow p-6"}>
+                <div>
+                  <h2
+                    className={"text-xl font-bold mb-2 text-gray-700 mb-1"}
+                    onClick={() => toggleDetails(dia)}
+                  >
+                    Día: {dia.dia} ({dia.enfoque})
+                  </h2>
+                </div>
+                {selectedDay === dia && (
+                  <ul>
+                    {dia.ejercicios &&
+                      dia.ejercicios.map((ejercicio) => (
+                        <li key={ejercicio.id} className={"mb-4"}>
+                          <h4 className={"font-medium"}>
+                            Ejercicio: {ejercicio.nombre}
+                          </h4>
+                          <p className={"text-gray-700 mb-1"}>
+                            Series: {ejercicio.series}
                           </p>
-                        )}
-                        {Notas && Notas.trim() !== "" && (
-                          <p className="text-gray-700 mb-1">Notas: {Notas}</p>
-                        )}
-                      </li>
-                    )
-                  )}
-                </ul>
-              )}
-            </div>
-          ))}
+                          <p className={"text-gray-700 mb-1"}>
+                            Repeticiones: {ejercicio.repeticiones}
+                          </p>
+                          <p className={"text-gray-700 mb-1"}>
+                            Cadencia: {ejercicio.cadencia}
+                          </p>
+                          {ejercicio.notas && ejercicio.notas.trim() !== "" && (
+                            <p className={"text-gray-700 mb-1"}>
+                              Notas: {ejercicio.notas}
+                            </p>
+                          )}
+                        </li>
+                      ))}
+                  </ul>
+                )}
+              </div>
+            ))}
         </div>
       </div>
-    </>
+    </div>
   );
-};
-
-export const getStaticPaths = async () => {
-  const paths = workouts.map(({ ID }) => ({
-    params: { id: ID.toString() },
-  }));
-
-  return {
-    paths,
-    fallback: false,
-  };
-};
-
-export const getStaticProps = async ({ params }) => {
-  const workout = workouts.find(({ ID }) => ID === parseInt(params.id));
-
-  return {
-    props: {
-      workout,
-    },
-  };
-};
-
-export default WorkoutPage;
+}
