@@ -25,6 +25,14 @@ export default function Routine() {
     }
   }, [id]);
 
+  useEffect(() => {
+    if (routine.id === 46) {
+      document.body.classList.add("honey");
+    } else {
+      document.body.classList.remove("honey");
+    }
+  }, [routine]);
+
   const toggleDetails = (dia) => {
     if (selectedDay === dia) {
       setSelectedDay(null);
@@ -56,7 +64,16 @@ export default function Routine() {
         <div className={"grid grid-cols-1 md:grid-cols-2 gap-6"}>
           {routine.dias &&
             routine.dias.map((dia) => (
-              <div key={dia.id} className={"bg-white rounded-lg shadow p-6"}>
+              <div
+                key={dia.id}
+                className={
+                  " rounded-lg shadow p-6" +
+                  // Arreglar la condición para hacer que sea posible cambiar el estilo de la página
+                  (routine.id === 46
+                    ? " bg-amber-300 bg-opacity-30"
+                    : " bg-white")
+                }
+              >
                 <div>
                   <h2
                     className={"text-xl font-bold mb-2 text-gray-700 mb-1"}

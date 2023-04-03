@@ -20,7 +20,7 @@ export default function Routines() {
         <ul className="space-y-4">
           {workouts.map(({ ID, Descripcion }) => (
             <li key={ID}>
-              <Link href={`/rutinas/${ID}`}>
+              <Link href={`/rutinasold/${ID}`}>
                 <div className="block border border-gray-400 rounded p-4 hover:bg-gray-200">
                   <h2 className="text-lg font-bold mb-2">{Descripcion}</h2>
                 </div>
