@@ -96,9 +96,12 @@ export default function Routine() {
                           <p className={"text-gray-700 mb-1"}>
                             Repeticiones: {ejercicio.repeticiones}
                           </p>
-                          <p className={"text-gray-700 mb-1"}>
-                            Cadencia: {ejercicio.cadencia}
-                          </p>
+                          {ejercicio.cadencia &&
+                            ejercicio.cadencia.trim() !== "" && (
+                              <p className={"text-gray-700 mb-1"}>
+                                Cadencia: {ejercicio.cadencia}
+                              </p>
+                            )}
                           {ejercicio.notas && ejercicio.notas.trim() !== "" && (
                             <p className={"text-gray-700 mb-1"}>
                               Notas: {ejercicio.notas}
