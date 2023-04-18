@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { IoCaretBackOutline } from "react-icons/io5";
-export default function Test() {
-  const [rutina, setRutina] = useState([]);
 
-  async function fetchWorkout() {
+export default function Rutinas() {
+  const [rutina, setRutina] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  async function fetchWorkout(page) {
     const res = await fetch(
-      "https://lordaris.pythonanywhere.com/rutinas/?limit=30"
+      `https://lordaris.pythonanywhere.com/rutinas/?page=${page}`
     );
     const data = await res.json();
     setRutina(data.results);
@@ -14,8 +16,18 @@ export default function Test() {
   }
 
   useEffect(() => {
-    fetchWorkout();
-  }, []);
+    fetchWorkout(currentPage);
+  }, [currentPage]);
+
+  function handleNextPage() {
+    setCurrentPage(currentPage + 1);
+  }
+
+  function handlePreviousPage() {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  }
 
   return (
     <div>
@@ -41,6 +53,22 @@ export default function Test() {
             </li>
           ))}
         </ul>
+        <div className="flex justify-center mt-4">
+          <button
+            className="px-4 py-2 bg-blue-500 text-white rounded disabled:opacity-50 mr-2"
+            onClick={handlePreviousPage}
+            disabled={currentPage === 1}
+          >
+            Anterior
+          </button>
+          <button
+            className="px-4 py-2 bg-blue-500 text-white rounded disabled:opacity-50"
+            onClick={handleNextPage}
+            disabled={rutina.length < 10}
+          >
+            Siguiente
+          </button>
+        </div>
       </div>
     </div>
   );
