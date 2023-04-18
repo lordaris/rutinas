@@ -26,7 +26,7 @@ export default function Routine() {
   }, [id]);
 
   useEffect(() => {
-    if (routine.id === 46) {
+    if (routine.id === 46 || routine.id === 47) {
       document.body.classList.add("honey");
     } else {
       document.body.classList.remove("honey");
@@ -69,7 +69,7 @@ export default function Routine() {
                 className={
                   " rounded-lg shadow p-6" +
                   // Arreglar la condición para hacer que sea posible cambiar el estilo de la página
-                  (routine.id === 46
+                  (routine.id === 46 || routine.id === 47
                     ? " bg-amber-300 bg-opacity-30"
                     : " bg-white")
                 }
