@@ -45,7 +45,7 @@ export default function Rutinas() {
         <ul className={"space-y-4"}>
           {rutina.map((routine) => (
             <li key={routine.id}>
-              <Link href={`/rutinas/${routine.id}`}>
+              <Link href={`/rutinasocultas/${routine.id}`}>
                 <div className="block border border-gray-400 rounded p-4 hover:bg-gray-200">
                   <h2 className="text-lg font-bold mb-2">{routine.nombre}</h2>
                 </div>
