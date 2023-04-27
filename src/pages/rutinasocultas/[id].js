@@ -5,8 +5,6 @@ import { IoCaretBackOutline } from "react-icons/io5";
 import { AiFillHome } from "react-icons/ai";
 
 export default function Routine() {
-  /*
-
   const [routine, setRoutine] = useState({});
   const [selectedDay, setSelectedDay] = useState(null);
   const router = useRouter();
@@ -117,14 +115,6 @@ export default function Routine() {
               </div>
             ))}
         </div>
-      </div>
-    </div>
-  ); */
-  return (
-    <div>
-      <div className="flex justify-center navbar shadows">
-        Las rutinas no están disponibles en este momento. <br /> Por favor
-        contacta con tu entrenador para más información.
       </div>
     </div>
   );

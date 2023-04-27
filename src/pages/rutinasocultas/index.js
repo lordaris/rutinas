@@ -3,7 +3,7 @@ import Link from "next/link";
 import { IoCaretBackOutline } from "react-icons/io5";
 
 export default function Rutinas() {
-  /*  const [rutina, setRutina] = useState([]);
+  const [rutina, setRutina] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
 
   async function fetchWorkout(page) {
@@ -70,15 +70,6 @@ export default function Rutinas() {
           </button>
         </div>
       </div>
-    </div>
-  ); */
-  return (
-    <div className={"justify-center"}>
-      Las rutinas no se encuentran disponibles en este momento. Si tienes
-      tiempo, lee el mensaje de la{" "}
-      <Link href={"/"} className={"text-blue-600"}>
-        página principal
-      </Link>
     </div>
   );
 }
